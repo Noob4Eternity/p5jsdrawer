@@ -5,7 +5,7 @@ let storyDisplay;
 let drawings = [];
 let maxDrawings = 3;
 let lastResult = "";
-const apiKey = "AIzaSyAvutJ4bNHuyVwd26MSqAuuyqVg84m8M7M"; // Replace with your actual API key
+const apiKey = "API KEY"; // Replace with your actual API key
 
 function setup() {
   canvas = createCanvas(400, 400);
