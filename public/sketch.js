@@ -51,8 +51,7 @@ async function generateStory() {
   try {
     storyDisplay.html("Generating description...");
 
-   
-    const prompt = `Write a very Creative Strony on : ${label}`; // You can change the prompt here
+    const prompt = `Write a very Creative Story on : ${label}`; // You can change the prompt here
 
     const response = await fetch("/generateStory", {
       method: "POST",
@@ -66,7 +65,7 @@ async function generateStory() {
       throw new Error("Failed to generate description.");
     }
 
-    const description = await response.text(); 
+    const description = await response.text();
     storyDisplay.html(description);
   } catch (error) {
     console.error("Error generating description:", error);
