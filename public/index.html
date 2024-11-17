@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
   <script src="https://unpkg.com/ml5@0.6.0/dist/ml5.min.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
 </head>
+
 <body>
   <div id="main-container">
     <!-- Buttons section -->
@@ -18,14 +27,14 @@
       <button id="clearSavedButton">Clear Saved Drawings</button>
       <button id="generateStoryButton">Generate Story</button>
     </div>
-    
+
     <!-- Canvas section -->
     <div id="canvas-section">
       <div id="canvas"></div>
       <div id="resultsDiv">Start drawing!</div>
       <div id="storyDisplay">Story will appear here...</div>
     </div>
-    
+
     <!-- Saved drawings section -->
     <div id="gallery">
       <h3>Saved Drawings</h3>
@@ -34,4 +43,5 @@
   </div>
   <script src="sketch.js"></script>
 </body>
+
 </html>
