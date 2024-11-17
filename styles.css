@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #86FFFA;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  #main-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #button-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 160px;
+  }
+  
+  button {
+    width: 160px; /* Fixed width for all buttons */
+    padding: 12px; /* Padding to allow height to vary based on text content */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  #clearButton {
+    background: linear-gradient(135deg, #F55300, #B80C00); /* Red gradient */
+  }
+  
+  #saveButton {
+    background: linear-gradient(135deg, #03B326, #038B01); /* Blue gradient */
+  }
+  
+  #clearSavedButton {
+    background: linear-gradient(135deg, #0078B6, #002D9E); /* Orange gradient */
+  }
+  
+  button:hover {
+    transform: translateY(-4px);
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  #canvas-section {
+    width: 500px;
+    height: 500px;
+    background: #00FCD1;
+    border-radius: 15px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+  }
+  
+  #canvas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  canvas {
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  #resultsDiv {
+    margin-top: 1cm; /* Ensures the prediction result is 2cm below the canvas */
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+  }
+  
+  #gallery {
+    width: 340px;
+    height: 440px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  #gallery h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  #savedDrawings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    overflow-y: auto;
+    width: 100%;
+  }
+  #storyDisplay {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
